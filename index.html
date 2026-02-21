@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capybara Run!</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(160deg, #1a237e 0%, #283593 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 2rem;
+      letter-spacing: 3px;
+      margin-bottom: 14px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    #gameCanvas {
+      display: block;
+      border-radius: 14px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      cursor: pointer;
+      /* Scales down on small screens while keeping aspect ratio */
+      max-width: 100%;
+    }
+
+    .hint {
+      color: #90caf9;
+      margin-top: 12px;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>CAPYBARA RUN!</h1>
+  <canvas id="gameCanvas"></canvas>
+  <p class="hint">SPACE or tap to jump &mdash; jump again in the air for a double jump!</p>
+
+  <script src="game.js"></script>
+</body>
+</html>
